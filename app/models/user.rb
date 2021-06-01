@@ -6,7 +6,7 @@ class User < ActiveRecord::Base
     username.downcase.gsub(" ", "-")
   end
 
-  def find_by_slug
+  def find_by_slug(slug)
     binding.pry
   end
 end
