@@ -72,4 +72,8 @@ class TweetsController < ApplicationController
   end
 end
 
+delete '/tweets/:id/delete' do
+  @tweet = Tweet.find_by(id: params[:id])
+end
+
 end
