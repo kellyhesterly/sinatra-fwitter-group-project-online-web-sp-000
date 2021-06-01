@@ -7,6 +7,6 @@ class User < ActiveRecord::Base
   end
 
   def find_by_slug(slug)
-
+    
   end
 end
