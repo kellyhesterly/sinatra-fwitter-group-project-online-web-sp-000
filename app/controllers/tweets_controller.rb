@@ -74,6 +74,7 @@ end
 
 delete '/tweets/:id/delete' do
   if logged_in?
+    if @tweet && @tweet.user == current_user
     @tweet = Tweet.find_by(id: params[:id])
     @tweet.delete
     redirect to '/tweets'
