@@ -80,6 +80,7 @@ delete '/tweets/:id/delete' do
       redirect to '/tweets'
     else
       redirect to "/tweets/#{@tweet.id}"
+    end
   else
     redirect to '/login'
   end
